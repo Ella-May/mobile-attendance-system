@@ -17,15 +17,18 @@
         <div class = "stuinfo-table-con">
             <h1>Student Information</h1>
         </div>    
-        
+
         <!--Display table-->
         <div class = "display-stuinfo-table">
             <table class = "stuinfo-table">
-                <th>
-                    <td>NAME</td>    
-                </th>
                 <tr>
-                    <td>try lang</td>
+                    <th>LRN</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Grade Level & Section</th> 
+                </tr>
+                <tr>
+                    <td><?php echo $rows['stuLRN']; ?></td>
                 </tr>
             </table>
         </div>

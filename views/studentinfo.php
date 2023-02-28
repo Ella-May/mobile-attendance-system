@@ -11,11 +11,28 @@
     <title>Student Information</title>
 </head>
 
-    <!--Add student information form -->
+    <!--Student information Page-->
 <body>
     <main class = "studentinfo-main">
-        <div class = "stu-personalinfo-con">
-            <form class = "stu-personalinfo-form" method = "post">
+        <div class = "stuinfo-table-con">
+            <h1>Student Information</h1>
+        </div>    
+        
+        <!--Display table-->
+        <div class = "display-stuinfo-table">
+            <table class = "stuinfo-table">
+                <th>
+                    <td>NAME</td>    
+                </th>
+                <tr>
+                    <td>try lang</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!--Student Information Form-->
+        <div class = "add-stu-personalinfo-con">
+            <form class = "add-stu-personalinfo-form" method = "post">
                 <label for="Student Last Name">Last Name:</label> 
                     <input type="text" placeholder="Last Name" name = "Student Last Name">
                 <label for="Student First Name">First Name:</label> 

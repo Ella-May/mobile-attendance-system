@@ -1,8 +1,6 @@
 <?php  
     session_start();
 
-    //include_once "../includes/facultyload/facultyload.php"
-
     require_once "../class/DB.php";
     require_once "../class/FacultyLoad.php";
 

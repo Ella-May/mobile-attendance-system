@@ -14,7 +14,8 @@ class StudentInfo {
         $stmt = $this->conn->query("SELECT * FROM studentinfo_tbl");  
         $studentInfos = $stmt->fetchAll();
 
-        return $studentInfos;
+        $studentInfo = ['studentInfos'=>$studentInfos];
+    
+        return $studentInfo;
     }
 }
-?>

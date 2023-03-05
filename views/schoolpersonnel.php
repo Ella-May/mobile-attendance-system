@@ -21,8 +21,6 @@
                     <input type="text" placeholder="First Name" name = "Personnel First Name">
                 <label for = "Personnel Middle Name">Middle Name:</label>
                     <input type="text" placeholder="Middle Name" name = "Personnel Middle Name">
-                <label for = "Personnel Extension Name">Extension Name:</label>
-                    <input type="text" placeholder="Extension Name" name = "Personnel Extension Name">
                 <label for = "Personnel Address">Complete Address:</label>
                     <input type="text" placeholder="Address" name="Personnel Address">
                 <label for = "Personnel Contact Number"> Contact Number:</label>

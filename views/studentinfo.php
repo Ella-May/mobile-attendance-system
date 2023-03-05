@@ -16,6 +16,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Information</title>
+    <link rel="stylesheet" href="../public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
     <!--Student information Page-->
@@ -47,9 +50,25 @@
             </tbody>
         </table>
 
-        
-        <!--Student Information Form-->
-            <form class="studentInfo" method="post" action="../includes/studentinfo/studentinfo/php">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+            <i class="fa-solid fa-plus"></i>
+            <span>Add Student Information</span>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Student Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!--Student Information Form-->
+                <form id="studentInfo" method="post" action="../includes/studentinfo/studentinfo.php">
                 <div class="mb-3">
                     <label class="form-label" for="Student Last Name">Last Name:</label> 
                     <input class="form-control" type="text" placeholder="Last Name" name = "Student Last Name">
@@ -105,10 +124,15 @@
                     <label class="form-label" for="Guardian Contact Number">Guardian Contact Number:</label> 
                     <input class="form-control" type="tel" placeholder="Guardian's Contact Number" name = "Guardian Contact Number" pattern="[0-9]{11}">
                 </div>         
-                <button type="submit">
-                    <span>Submit</span>
-                </button>
             </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="Submmit" class="btn btn-primary" form="studentInfo" name="submitStudent">Save changes</button>
+            </div>
+            </div>
         </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

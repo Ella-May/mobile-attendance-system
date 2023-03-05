@@ -11,11 +11,22 @@
     <title>Dasboard</title>
 </head>
 <body>
-    <? if(!empty($_SESSION['username'])): ?>
+   
+    <? if(!empty($_SESSION['username'])): ?> 
     <p> <?php echo $_SESSION['username'] ?> </p>
     <? endif; ?>
 
     <a href="../includes/logout.php">Logout</a>
-
+    
+    <!--Dashboard Container-->
+    <header>
+        <h1>DASHBOARD</h1>
+    </header>
+    <main>
+        <p>TRY LANG PO KUNG SAN TO MAPUPUNTA</p>
+    </main>
+    <aside>
+        <p>ITO RIN SAN KA PUPUNTA</p>
+    </aside>
 </body>
 </html>

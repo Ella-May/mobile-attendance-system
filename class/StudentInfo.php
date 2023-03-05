@@ -18,4 +18,15 @@ class StudentInfo {
     
         return $studentInfo;
     }
+
+    public function store($button1)
+    {
+        if($_SERVER['REQUEST_METHOD']==='POST'){
+            //...
+            if(isset($button1))
+            {
+                //$stmt = $this->conn->
+            }
+        } 
+    }   
 }

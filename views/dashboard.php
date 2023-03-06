@@ -11,14 +11,8 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="stylesheets/dashboard.css">
 </head>
-<body>
-   
-    <? if(!empty($_SESSION['username'])): ?> 
-    <p> <?php echo $_SESSION['username'] ?> </p>
-    <? endif; ?>
-
-    <a href="../includes/logout.php">Logout</a>
-    
+<body>   
+     
     <!--Dashboard Container-->
     <aside id="content-right">
         <div><p>MEMA LANG PO</p></div>
@@ -36,5 +30,6 @@
         </ul>
         </div>
     </aside>
+    
 </body>
 </html>

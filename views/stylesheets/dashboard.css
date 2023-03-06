@@ -21,6 +21,7 @@ a{
     text-decoration: none;
 }
 ul{
+    text-decoration: none;
     list-style: none;
     text-decoration:c green;
 }
@@ -31,8 +32,8 @@ ul{
     margin: auto;
     height: 100%;
     width: 100%;
-    
 }
+
 .L_panel{
 
     background-color: aquamarine;
@@ -51,21 +52,25 @@ ul{
     margin: auto;
     margin-top: 50%;
 }
+
 .username{
     margin: auto;
     text-align: center;margin-top: 20px;
 }
+
 .nav_btn{
     background-color: beige;
     width: 30vw;
     word-wrap: initial;
 }
+
 .dashboard{
     background-color: rgb(196, 196, 196);
     text-align: center;
     margin: auto;
     height: 90vh;
 }
+
 .R_panel{
     height: 90vh;
     margin: auto;

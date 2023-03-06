@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     width: 100vw;
     height: 100vh;
@@ -15,15 +14,9 @@ body{
     font-family: "poppins","Lucida Sans", sans-serif;
     
 }
-a{
-    font-size: x-large;
-    text-decoration-color: aqua;
-    text-decoration: none;
-}
-ul{
-    text-decoration: none;
-    list-style: none;
-    text-decoration:c green;
+.modules-tab{
+    text-decoration-style: none;
+    list-style-type: none;
 }
 
 .container-fluid{
@@ -32,6 +25,7 @@ ul{
     margin: auto;
     height: 100%;
     width: 100%;
+    display: flex;
 }
 
 .L_panel{
@@ -62,6 +56,7 @@ ul{
     background-color: beige;
     width: 30vw;
     word-wrap: initial;
+    text-decoration: none;
 }
 
 .dashboard{

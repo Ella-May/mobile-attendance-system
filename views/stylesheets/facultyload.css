@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.addSubj {
+    margin: 1.5em 0 2.5em 0;
+    text-align: center;
+}

@@ -15,6 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty Load</title>
+    <link rel="stylesheet" href="stylesheets/facultyload.css">
     <link rel="stylesheet" href="../public/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -23,34 +24,10 @@
     <header></header>
     <main></main>
     <aside></aside>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Subject Name</th>
-                <th>Grade Level</th>
-                <th>Strand</th>
-                <th>Section</th>
-                <th>Day</th>
-                <th>Time</th>
-                <th>Teacher</th>
-            </tr>
-        </thead>
-            <tbody>
-                <?php foreach($datas['facultyLoads'] as $facultyload): ?>
-                    <tr>
-                        <td><?= $facultyload['subjName'] ?></td>
-                        <td><?= $facultyload['subjGradelevel'] ?></td>
-                        <td><?= $facultyload['subjStrand'] ?></td>
-                        <td><?= $facultyload['subjSec'] ?></td>
-                        <td><?= $facultyload['subjDay'] ?></td>
-                        <td><?= $facultyload['subjTimeStart']." - ".$facultyload['subjTimeEnd'] ?></td>
-                        <td><?= $facultyload['perLname'].", ".$facultyload['perFname']." ".$facultyload['perMname']?></td>
-                    </tr>
-                <?php endforeach; ?>
-            </tbody>
-    </table>
 
-        <!-- Button trigger modal -->
+        <div class="addSubj">
+            <h3>Student Information</h3>
+            <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
             <i class="fa-solid fa-plus"></i>
             <span>Add New Subject</span>
@@ -110,6 +87,37 @@
             </div>
             </div>
         </div>
+        </div>
+        </div>
+        
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Subject Name</th>
+                <th>Grade Level</th>
+                <th>Strand</th>
+                <th>Section</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Teacher</th>
+            </tr>
+        </thead>
+            <tbody>
+                <?php foreach($datas['facultyLoads'] as $facultyload): ?>
+                    <tr>
+                        <td><?= $facultyload['subjName'] ?></td>
+                        <td><?= $facultyload['subjGradelevel'] ?></td>
+                        <td><?= $facultyload['subjStrand'] ?></td>
+                        <td><?= $facultyload['subjSec'] ?></td>
+                        <td><?= $facultyload['subjDay'] ?></td>
+                        <td><?= $facultyload['subjTimeStart']." - ".$facultyload['subjTimeEnd'] ?></td>
+                        <td><?= $facultyload['perLname'].", ".$facultyload['perFname']." ".$facultyload['perMname']?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+    </table>
+
         </div>
 
 

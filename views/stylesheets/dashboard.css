@@ -1,15 +1,74 @@
-* { 
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+*{
     padding: 0;
     margin: 0;
     outline: 0;
     box-sizing: border-box;
 }
-#content-right{
-    display: grid;
-}
-#modules-tab{
-    list-style-type: none;
+
+
+body{
+    width: 100vw;
+    height: 100vh;
     background-color: beige;
-    display: inline;
+    margin:10px ;
+    font-family: "poppins","Lucida Sans", sans-serif;
+    
+}
+a{
+    font-size: x-large;
+    text-decoration-color: aqua;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    text-decoration:c green;
+}
+
+.container-fluid{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    
+}
+.L_panel{
+
+    background-color: aquamarine;
+    text-align: right;
+    margin: auto;
+    height: 100vh;
+}
+.prof_pic{
+    height: 80px;
+    width: 80px;
+    border: solid 1px black;
+    border-radius: 50px; 
+    background-color: rgb(80, 80, 80);
+    overflow: hidden;
+    padding: 0px,10px;
+    margin: auto;
+    margin-top: 50%;
+}
+.username{
+    margin: auto;
+    text-align: center;margin-top: 20px;
+}
+.nav_btn{
+    background-color: beige;
+    width: 30vw;
+    word-wrap: initial;
+}
+.dashboard{
+    background-color: rgb(196, 196, 196);
+    text-align: center;
+    margin: auto;
+    height: 90vh;
+}
+.R_panel{
+    height: 90vh;
+    margin: auto;
+   
 }
 

@@ -1,5 +1,15 @@
-#Modules{
+* { 
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+#content-right{
+    display: grid;
+}
+#modules-tab{
     list-style-type: none;
     background-color: beige;
     display: inline;
 }
+

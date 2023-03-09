@@ -34,7 +34,6 @@
             </div>
         </div>
 <!-----------==========================MID PANEL===================-->
-
         <div class="col-sm-6 dashboard">
             <h1></br>Dashboard</h1>      
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ullam a adipisci quibusdam quidem ut doloremque maiores ipsa eum culpa! Numquam quisquam provident minima autem est fugiat amet vel rerum?.</p> 

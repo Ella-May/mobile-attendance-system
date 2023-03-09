@@ -15,12 +15,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="container-fluid">
-<div class="row container" >
-        <div class="col-sm-3 p-3" >
+<div class="row container">
+        <div class="col-sm-3 p-3">
 
 <!-----------==========================LEFT PANEL===================-->
-            <div class="p-3 Lpanel" >
-                    <div class="prof_pic" >
+            <div class="p-3 Lpanel">
+                    <div class="prof_pic">
                         <img src="blank-profile.webp" alt="profile picture" width="80px" height="80px">
                     </div>
                     <div class="username" ><h3>Juan Tamad</h3></div>
@@ -40,13 +40,6 @@
             <h1></br>Dashboard</h1>      
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ullam a adipisci quibusdam quidem ut doloremque maiores ipsa eum culpa! Numquam quisquam provident minima autem est fugiat amet vel rerum?.</p> 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vel dignissimos vitae perspiciatis dolorum nihil reiciendis facere explicabo non saepe a incidunt veritatis veniam quae adipisci, eum quo beatae id!</p>         
-        </div>
-<!-----------==========================RIGHT PANEL===================-->
-
-        <div class="col-sm-3 R_panel">
-            <h1>My right panel</h1>      
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vel dignissimos vitae perspiciatis dolorum nihil reiciendis facere explicabo non saepe a incidunt veritatis veniam quae adipisci, eum quo beatae id!</p> 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vel dignissimos vitae perspiciatis dolorum nihil reiciendis facere explicabo non saepe a incidunt veritatis veniam quae adipisci, eum quo beatae id!</p> 
         </div>
     </div>    
 </body>

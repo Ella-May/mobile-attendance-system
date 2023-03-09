@@ -17,7 +17,6 @@
 <body class="container-fluid">
 <div class="row container">
         <div class="col-sm-3 p-3">
-
 <!-----------==========================LEFT PANEL===================-->
             <div class="p-3 Lpanel">
                     <div class="prof_pic">

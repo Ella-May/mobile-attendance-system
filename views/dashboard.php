@@ -17,7 +17,6 @@
 <body class="container-fluid">
 <div class="row container">
         <div class="col-sm-3 p-3">
-
 <!-----------==========================LEFT PANEL===================-->
             <div class="p-3 Lpanel">
                     <div class="prof_pic">
@@ -35,7 +34,6 @@
             </div>
         </div>
 <!-----------==========================MID PANEL===================-->
-
         <div class="col-sm-6 dashboard">
             <h1></br>Dashboard</h1>      
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ullam a adipisci quibusdam quidem ut doloremque maiores ipsa eum culpa! Numquam quisquam provident minima autem est fugiat amet vel rerum?.</p> 

@@ -12,6 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylesheets/dashboard.css" rel="stylesheet">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="stylesheets/dashboard.css">
+    <link rel="stylesheet" href="../public/assets/bootstrap/css/bootstrap.min.css">   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -38,18 +42,13 @@
                 </div>
                 <button class="logoutBtn">Logout</button>
             </div>
-            <div class="main">main
-                <div class="box">
-                    <ul>
-                        <li><a>NO. OF PRESENT STUDENT</a></li>
-                        <li><a></a>NO.OF ABSENT STUDENTS</li>
-                        <li><a>TOTAL NO.STUDENT</a></li>
-                        
-                    </ul>
-                </div>
-    
-            </div>
-            
+        </div>
+<!-----------==========================MID PANEL===================-->
+
+        <div class="col-sm-6 dashboard">
+            <h1></br>Dashboard</h1>      
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ullam a adipisci quibusdam quidem ut doloremque maiores ipsa eum culpa! Numquam quisquam provident minima autem est fugiat amet vel rerum?.</p> 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vel dignissimos vitae perspiciatis dolorum nihil reiciendis facere explicabo non saepe a incidunt veritatis veniam quae adipisci, eum quo beatae id!</p>         
         </div>
     </div>
 </body>

@@ -24,6 +24,9 @@
 </head>
 <body>
     <main class="login-main"> 
+        <div class="img-bg-con">
+            <img src="../public/assets/img/nashs-bg.jpg" alt="NASHS Building">
+        </div>
         <div class="login-con">
             <!--LOG IN-->
             <div class="login-form-con"> 
@@ -40,7 +43,7 @@
                 </div>
             </div>
             <div class="img-con">
-                <img src="../public/assets/img/sampleimg.PNG" alt="School Bag">
+                <img src="../public/assets/img/nashs-logo.PNG" alt="NASHS Logo">
             </div>
         </div>
     </main>

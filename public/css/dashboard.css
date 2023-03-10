@@ -102,8 +102,8 @@ ul{
 }
 .funcKeys li a{
     align-items: center;
-    text-align: center;
-    display: block;
+    justify-content: center;
+    display: flex;
     border-radius: 30px ;
     padding: 12px;
     width: 13dvw;

@@ -33,9 +33,9 @@
                 <div class="funcKeys">
                     <ul>
                         <li><a>User Accounts</a></li>
-                        <li><a>Student Information</a></li>
-                        <li><a>School Personnel</a></li>
-                        <li><a>Faculty Loads</a></li>
+                        <li><a href="studentinfo.php">Student Information</a></li>
+                        <li><a href="schoolpersonnel.php">School Personnel</a></li>
+                        <li><a href="facultyload.php">Faculty Loads</a></li>
                         <li><a>Attendance Report</a></li>
                     </ul>
                 </div>

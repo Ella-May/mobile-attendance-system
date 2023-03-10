@@ -98,7 +98,7 @@ ul{
     padding: 0;
     border-radius: 30px ;
     background-color: #e6f9ec;
-
+    
 }
 .funcKeys li a{
     align-items: center;
@@ -109,11 +109,21 @@ ul{
     width: 13dvw;
     height: 3dvw;
     background-color: #e6f9ec;
+    text-decoration: none;
 }
 .funcKeys ul li a:hover{
     box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      z-index: 1;
+     
+}
+.funcKeys ul li a:visited{
+    color:black;
+}
+@media (min-width:480) and (max-width:1232px){
+    .nashs{
+        font-size: 16px;
+   
+    }
 }
 
-
-
+    

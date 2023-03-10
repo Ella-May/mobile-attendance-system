@@ -107,7 +107,7 @@
                 <?php foreach($datas['facultyLoads'] as $facultyload): ?>
                     <tr>
                         <td><?= $facultyload['subjName'] ?></td>
-                        <td><?= $facultyload['subjGradelevel'] ?></td>
+                        <td><?= $facultyload['subjGrlvl'] ?></td>
                         <td><?= $facultyload['subjStrand'] ?></td>
                         <td><?= $facultyload['subjSec'] ?></td>
                         <td><?= $facultyload['subjDay'] ?></td>

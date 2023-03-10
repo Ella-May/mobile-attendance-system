@@ -65,7 +65,10 @@ button {
     flex-direction: column;
     gap: 0.25em;
 }
-.img-con img {
+.img-con {
+    display: none;
+}
+.img-bg-con {
     display: none;
 }
 

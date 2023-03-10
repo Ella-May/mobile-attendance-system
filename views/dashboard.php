@@ -45,11 +45,42 @@
 <!-----------==========================MID PANEL===================-->
 
         <div class="main">
-            <h1></br>Dashboard</h1>      
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ullam a adipisci quibusdam quidem ut doloremque maiores ipsa eum culpa! Numquam quisquam provident minima autem est fugiat amet vel rerum?.</p> 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, vel dignissimos vitae perspiciatis dolorum nihil reiciendis facere explicabo non saepe a incidunt veritatis veniam quae adipisci, eum quo beatae id!</p>         
+            <h1></br>Dashboard</h1> 
+            <div class"date-time>
+                <span id='day'></span>
+                <span id='month'></span>
+                <span id='year'></span>
+                <span id='hours'></span>
+                <span id='minutes'></span>
+                <span id='seconds'></span>
+            </div>
+            
+
+            <div class="StatBox">
+
+                <div class="info">NO. OF PRESENT STUDENTS</div>
+                <div class="info">NO. OF ABSENT STUDENTS</div>
+                <div class="info">TOTAL NO. OF STUDENTS</div>
+                   
+            </div>     
+                
         </div>
         </div>
+        
+        <script>
+                var d = new Date();
+                document.getElementById('day').innerHTML=d.getDate();
+                var m = new Date();
+                document.getElementById('month').innerHTML=m.getMonth()+1;
+                var y = new Date();
+                document.getElementById('year').innerHTML=y.getFullYear()+1;
+                var h = new Date();
+                document.getElementById('hours').innerHTML=h.getHours()+1+" :";
+                var m = new Date();
+                document.getElementById('minutes').innerHTML=m.getMinutes();
+                var s = new Date();
+                document.getElementById('seconds').innerHTML=s.getSeconds();
+        </script>
 </body>
 
 </html>

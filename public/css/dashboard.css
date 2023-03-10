@@ -57,12 +57,7 @@
     flex-direction: row;
 }
 
-.main{
-    background-color: #e6f9ec;
-    width: 80dvw;
-    height: 80dvh;
-    padding: 10px;
-}
+
 .aside1{
     background-color: #1cc650;
     width: 20dvw;
@@ -126,4 +121,5 @@ ul{
     }
 }
 
-    
+
+

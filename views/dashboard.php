@@ -46,7 +46,7 @@
 
         <div class="main">
             <h1></br>Dashboard</h1> 
-            <div class"date-time>
+            <div class"date-time">
                 <span id='day'></span>
                 <span id='month'></span>
                 <span id='year'></span>

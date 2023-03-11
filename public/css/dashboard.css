@@ -55,6 +55,7 @@
 .panel{
     display: flex;
     flex-direction: row;
+    margin: auto;
 }
 
 
@@ -63,12 +64,13 @@
     width: 20dvw;
     height: 80.5dvh;
     padding-top: 30px;
-    margin: auto;
     display: flex;
     flex-direction: column ;
     align-items: center;
-    
+    position: relative;
+    float: left;
 }
+
 .logoutBtn{
     padding: 10px;
     border: #3e3f3e solid 2px;
@@ -114,7 +116,32 @@ ul{
 .funcKeys ul li a:visited{
     color:black;
 }
-@media (min-width:480) and (max-width:1232px){
+.main{
+    background-color: #e6f9ec;
+    width: 80dvw;
+    height: 80dvh;
+    padding: 10px;
+
+}
+.date-time p{
+    font-size: 3rem;
+    color:#3e3f3e;
+    font-weight: bold;
+}
+.StatBox{
+    display: flex;
+    margin: 10px;
+}
+.info{
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 20dvw;
+    height: 20dvh; 
+    background-color: aquamarine   ;
+}
+
+/*@media (min-width:480) and (max-width:1232px){
     .nashs{
         font-size: 16px;
    

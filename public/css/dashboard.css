@@ -123,10 +123,10 @@ ul{
     padding: 10px;
 
 }
-.date-time p{
-    font-size: 3rem;
-    color:#3e3f3e;
-    font-weight: bold;
+h2{
+    font-size: 3em;
+    color: #3e3f3e;
+    font-family: 'Courier New', Courier, monospace;
 }
 .StatBox{
     display: flex;

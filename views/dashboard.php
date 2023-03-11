@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../public/css/dashboard.css">
  <!--  <link rel="stylesheet" href="../public/assets/bootstrap/css/bootstrap.min.css">   -->
  </head>
-<body>
+<body onload="rtClock()">
 
     <div class="container">
         <header class="header">
@@ -46,14 +46,15 @@
 
         <div class="main">
             <h1></br>Dashboard</h1> 
-            <div class"date-time">
+            <h2>
                 <span id='day'></span>
                 <span id='month'></span>
                 <span id='year'></span>
                 <span id='hours'></span>
                 <span id='minutes'></span>
                 <span id='seconds'></span>
-            </div>
+            </h2>
+            
             
 
             <div class="StatBox">
@@ -67,19 +68,31 @@
         </div>
         </div>
         
-        <script>
-                var d = new Date();
-                document.getElementById('day').innerHTML=d.getDate();
-                var m = new Date();
-                document.getElementById('month').innerHTML=m.getMonth()+1;
-                var y = new Date();
-                document.getElementById('year').innerHTML=y.getFullYear()+1;
-                var h = new Date();
-                document.getElementById('hours').innerHTML=h.getHours()+1+" :";
-                var m = new Date();
-                document.getElementById('minutes').innerHTML=m.getMinutes();
-                var s = new Date();
-                document.getElementById('seconds').innerHTML=s.getSeconds();
+        <script type="text/javascript">
+            function updateClock(){
+                var now= new Date;
+                var mon = now.getMonth();
+                var day = now.getDate();
+                var year = now.getFullYear();
+                var hrs = now.getHours();
+                var mins = now.getMinutes();
+                    sec= now.getSeconds();
+                document.getElementById('day').innerHTML=day;
+                
+                document.getElementById('month').innerHTML=mon;
+                
+                document.getElementById('year').innerHTML=year+1;
+                
+                document.getElementById('hours').innerHTML=hrs+1+" :";
+                
+                document.getElementById('minutes').innerHTML=mins;
+                document.getElementById('seconds').innerHTML=sec;
+            }
+
+            function rtClock(){
+                updateClock();
+                window.setInterval("updateClock()",1);
+            }
         </script>
 </body>
 

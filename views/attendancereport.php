@@ -54,6 +54,10 @@
                     <td><?= $attendreport['subjName'] ?></td>
                     <td><?= $attendreport['subjGrlvl']." - ".$attendreport['subjSec'] ?></td>
                     <td><?= $attendreport['perLname'].", ".$attendreport['perFname']." ".$attendreport['perMname']?></td>
+                    <td>
+                        <button>Generate</button>
+                        <button>Print</button>
+                    </td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>

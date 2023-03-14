@@ -25,7 +25,7 @@
             <div class="nashs">
                 Ninoy Aquino Senior High School
             </div>
-            <div class="profile">Hello User!   <img src="../public/assets/img/sampleimg.PNG" alt="User Profile"></div>
+            <div class="profile">Hello User! <img src="../public/assets/img/sampleimg.PNG" alt="User Profile"></div>
         </header>
     </div>
         <div class="panel">
@@ -36,7 +36,7 @@
                         <li><a href="studentinfo.php">Student Information</a></li>
                         <li><a href="schoolpersonnel.php">School Personnel</a></li>
                         <li><a href="facultyload.php">Faculty Loads</a></li>
-                        <li><a>Attendance Report</a></li>
+                        <li><a href="attendancereport.php">Attendance Report</a></li>
                     </ul>
                 </div>
                 <button class="logoutBtn">Logout</button>
@@ -67,7 +67,7 @@
                 
         </div>
         </div>
-        
+        <!-- Clock -->
         <script type="text/javascript">
             function updateClock(){
                 var now= new Date;

@@ -19,7 +19,32 @@
     <link rel="stylesheet" href="../public/assets/bootstrap/css/bootstrap.min.css">
 </head>   
 <body>
-    
+    <!-- Modules Tab -->
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="../public/assets/img/nashs-logo.PNG" alt="Nashs Logo">
+            </div>
+            <div class="nashs">
+                Ninoy Aquino Senior High School
+            </div>
+            <div class="profile">Hello User! <img src="../public/assets/img/sampleimg.PNG" alt="User Profile"></div>
+        </header>
+    </div>
+        <div class="panel">
+            <div class="aside1">
+                <div class="funcKeys">
+                    <ul>
+                        <li><a href="useraccounts.php">User Accounts</a></li>
+                        <li><a href="studentinfo.php">Student Information</a></li>
+                        <li><a href="schoolpersonnel.php">School Personnel</a></li>
+                        <li><a href="facultyload.php">Faculty Loads</a></li>
+                        <li><a href="attendancereport.php">Attendance Report</a></li>
+                    </ul>
+                </div>
+                <button class="logoutBtn">Logout</button>
+            </div>
+    <!-- Attendance Report table -->
     <div class="attendreport-tbl">
         <div>
             <h3>Attendance Report</h3>

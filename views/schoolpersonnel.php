@@ -20,6 +20,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
     <body> 
+     <!-- Modules Tab -->
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <img src="../public/assets/img/nashs-logo.PNG" alt="Nashs Logo">
+                </div>
+                <div class="nashs">
+                    Ninoy Aquino Senior High School
+                </div>
+                <div class="profile">Hello User! <img src="../public/assets/img/sampleimg.PNG" alt="User Profile"></div>
+            </header>
+        </div>
+            <div class="panel">
+                <div class="aside1">
+                    <div class="funcKeys">
+                        <ul>
+                            <li><a href="useraccounts.php">User Accounts</a></li>
+                            <li><a href="studentinfo.php">Student Information</a></li>
+                            <li><a href="schoolpersonnel.php">School Personnel</a></li>
+                            <li><a href="facultyload.php">Faculty Loads</a></li>
+                            <li><a href="attendancereport.php">Attendance Report</a></li>
+                        </ul>
+                    </div>
+                    <button class="logoutBtn">Logout</button>
+                </div>
 
     <!--Display School Personnel Info-->
         <table class="table">

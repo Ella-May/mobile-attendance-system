@@ -24,7 +24,8 @@
 
     <!--Student information Page-->
 <body>
-<div class="container">
+    <!-- Modules Tab -->
+    <div class="container">
         <header class="header">
             <div class="logo">
                 <img src="../public/assets/img/nashs-logo.PNG" alt="Nashs Logo">
@@ -39,7 +40,7 @@
             <div class="aside1">
                 <div class="funcKeys">
                     <ul>
-                        <li><a>User Accounts</a></li>
+                        <li><a href="useraccounts.php">User Accounts</a></li>
                         <li><a href="studentinfo.php">Student Information</a></li>
                         <li><a href="schoolpersonnel.php">School Personnel</a></li>
                         <li><a href="facultyload.php">Faculty Loads</a></li>

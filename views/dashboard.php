@@ -32,7 +32,7 @@
             <div class="aside1">
                 <div class="funcKeys">
                     <ul>
-                        <li><a>User Accounts</a></li>
+                        <li><a href="useraccounts.php">User Accounts</a></li>
                         <li><a href="studentinfo.php">Student Information</a></li>
                         <li><a href="schoolpersonnel.php">School Personnel</a></li>
                         <li><a href="facultyload.php">Faculty Loads</a></li>

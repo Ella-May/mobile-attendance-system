@@ -15,8 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attendance Report</title>
-    <link rel="stylesheet" href="../public/css/attendancereport.css">
-    <link rel="stylesheet" href="../public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/attendancereport.css">
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.min.css">
 </head>   
 <body>
     <!-- Modules Tab -->

@@ -1,5 +1,11 @@
 <?php
     session_start();
+
+    require_once "../class/DB.php";
+    require_once "../class/UserAccounts.php";
+
+    $useraccount = new UserAccounts(DB::getInstance());
+    $useraccount = $useraccount->index();
 ?>
 
 
@@ -25,7 +31,7 @@
             <div class="nashs">
                 Ninoy Aquino Senior High School
             </div>
-            <div class="profile">Hello User! <img src="../public/assets/img/sampleimg.PNG" alt="User Profile"></div>
+            <div class="profile">Hello <?= $useraccount['userName'] ?>! <img src="../public/assets/img/sampleimg.PNG" alt="User Profile"></div>
         </header>
     </div>
         <div class="panel">
@@ -77,13 +83,13 @@
                 var hrs = now.getHours();
                 var mins = now.getMinutes();
                     sec= now.getSeconds();
+                document.getElementById('month').innerHTML=mon+1;
+                
                 document.getElementById('day').innerHTML=day;
                 
-                document.getElementById('month').innerHTML=mon;
+                document.getElementById('year').innerHTML=year;
                 
-                document.getElementById('year').innerHTML=year+1;
-                
-                document.getElementById('hours').innerHTML=hrs+1+" :";
+                document.getElementById('hours').innerHTML=hrs+" :";
                 
                 document.getElementById('minutes').innerHTML=mins;
                 document.getElementById('seconds').innerHTML=sec;

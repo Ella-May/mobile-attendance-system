@@ -1,8 +1,8 @@
 <?php
     session_start();
 
-    require_once "../class/DB.php";
-    require_once "../class/SchoolPersonnel.php";
+    require_once "../../class/DB.php";
+    require_once "../../class/SchoolPersonnel.php";
 
     $schoolpersonnel = new SchoolPersonnel(DB::getInstance());
     $schoolPersonnels = $schoolpersonnel->index();

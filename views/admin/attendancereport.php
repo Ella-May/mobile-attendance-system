@@ -1,8 +1,8 @@
 <?php
     session_start();
 
-    require_once "../class/DB.php";
-    require_once "../class/AttendanceReport.php";
+    require_once "../../class/DB.php";
+    require_once "../../class/AttendanceReport.php";
 
     $attendreport = new AttendanceReport(DB::getInstance());
     $datas = $attendreport->index();  
@@ -23,7 +23,7 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <img src="../public/assets/img/nashs-logo.PNG" alt="Nashs Logo">
+                <img src="../../public/assets/img/nashs-logo.PNG" alt="Nashs Logo">
             </div>
             <div class="nashs">
                 Ninoy Aquino Senior High School

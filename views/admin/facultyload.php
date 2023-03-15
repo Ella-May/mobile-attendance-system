@@ -1,8 +1,8 @@
 <?php  
     session_start();
 
-    require_once "../class/DB.php";
-    require_once "../class/FacultyLoad.php";
+    require_once "../../class/DB.php";
+    require_once "../../class/FacultyLoad.php";
 
     $facultyload = new FacultyLoad(DB::getInstance());
     $datas = $facultyload->index();

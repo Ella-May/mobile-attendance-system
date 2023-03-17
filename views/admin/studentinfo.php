@@ -6,7 +6,6 @@
 
     $studentinfo = new StudentInfo(DB::getInstance());
     $studentInfos = $studentinfo->index();
-    
 ?>
 
 <!DOCTYPE html>
@@ -55,6 +54,143 @@
             <h1>Student Information</h1>
         </div>    
 
+    <div class="col-lg-4">
+        <!-- Button Modal -->
+        <button type="button" class="btn btn-block btn-gray-800 mb-3" data-bs-toggle="modal" data-bs-target="#modal-form-signup" onclick="clearData()">Add Student</button>
+        <!-- Modal Content -->
+        <div class="modal fade" id="modal-form-signup" tabindex="-1" role="dialog" aria-labelledby="modal-form-signup" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="card p-3 p-lg-4">
+                            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="text-center text-md-center mb-4 mt-md-0">
+                                <h1 class="mb-0 h4">Student Information</h1>
+                            </div>
+                            <form action="../../includes/studentinfo/studentinfo.php" class="mt-4">
+                                <!-- Form -->
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Learner's Reference No.</label>
+                                        <input class="form-control" type="text" id='LRN' name='LRN' placeholder="Learner's Reference No." required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input class="form-control" type="text" id='lastname' name='lastname' placeholder="Student's Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input class="form-control" type="text" id='firstname' name='firstname' placeholder="Student's First Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Middle Name</label>
+                                        <input class="form-control" type="text" id='midname' name='midname' placeholder="Student's Middle Name">
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Sex</label>
+                                        <select class="form-control" type="text" id='stu_sex' name='stu_sex' required>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Birthday</label>
+                                        <input class="form-control" type="date" id='stu_bday' name='stu_bday' required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Age</label>
+                                        <input class="form-control" type="text" id='age' name='age' placeholder="Student's Age" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Home Address</label>
+                                        <input class="form-control" type="text" id='address' name='address' placeholder="Student's Address" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Contact Number</label>
+                                        <input class="form-control" type="text" id='con_number' name='con_number' placeholder="Student's Contact Number" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Grade Level</label>
+                                        <select class="form-control" type="text" id='stu_gradelvl' name='stu_gradelvl' required>
+                                            <option>Grade 11</option>
+                                            <option>Grade 12</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Strand</label>
+                                        <input class="form-control" type="text" id='stu_strand' name='stu_strand' placeholder="Strand" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Section</label>
+                                        <input class="form-control" type="text" id='section' name='section' placeholder="Section" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Guardian's Name</label>
+                                        <input class="form-control" type="text" id='gur_name' name='gur_name' placeholder="Guardian's Full Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-group">
+                                        <label>Guardian's Contact Number</label>
+                                        <input class="form-control" type="text" id='gur_number' name='gur_number' placeholder="Guardian's Contact Number" required>
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-gray-800" id='submitStudent' name='submitStudent'>Sign up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Modal Content -->
+            <script type="text/javascript">
+                function clearData(){
+                    document.getElementById('studentID').value = '';
+                    document.getElementById('LRN').value = '';
+                    document.getElementById('lastname').value = '';
+                    document.getElementById('firstname').value = '';
+                    document.getElementById('midname').value = '';
+                    document.getElementById('stu_sex').value = '';
+                    document.getElementById('stu_bday').value = '';
+                    document.getElementById('age').value = '';
+                    document.getElementById('address').value = '';
+                    document.getElementById('con_number').value = '';
+                    document.getElementById('stu_gradelvl').value = '';
+                    document.getElementById('stu_strand').value = '';
+                    document.getElementById('section').value = '';
+                    document.getElementById('gur_name').value = '';
+                    document.getElementById('gur_number').value = '';
+                }
+            </script>
+        </div>
+        
         <!--Display table-->
         <table class = "table">
             <thead>
@@ -77,89 +213,6 @@
             </tbody>
         </table>
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-            <i class="fa-solid fa-plus"></i>
-            <span>Add Student Information</span>
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Student Information</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <!--Student Information Form-->
-                <form id="studentInfo" method="post" action="../includes/studentinfo/studentinfo.php">
-                <div class="mb-3">
-                    <label class="form-label" for="Student Last Name">Last Name:</label> 
-                    <input class="form-control" type="text" placeholder="Last Name" name = "Student Last Name">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="Student First Name">First Name:</label> 
-                    <input class="form-control" type="text" placeholder="First Name" name = "Student First Name">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="Student Middle Name">Middle Name:</label> 
-                    <input class="form-control" type="text" placeholder="Middle Name" name = "Student Middle Name">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="Student Sex">Sex:</label> 
-                    <select class="form-control" name = " Student Sex"> 
-                        <option value= "Male">Male</option>
-                        <option value= "Female">Female</option>
-                    </select> 
-                </div>    
-                <div class="mb-3">
-                    <label class="form-label" for="Student Address">Complete Address:</label> 
-                    <input class="form-control" type="text" placeholder="Address" name = "Student Address">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="Student Bday">Birthday:</label> 
-                    <input class="form-label" type="date" placeholder="Birthday" name = "Student Bday">
-                </div> 
-                <div class="mb-3">
-                    <label class="form-label" for="Student Strand">Strand:</label> 
-                    <input class="form-control" type="text" placeholder="Strand" name = "Student Strand">    
-                </div>  
-                <div class="mb-3">
-                    <label class="form-label" for="Student Grade Level">Grade Level:</label> 
-                    <select class="form-control" name = "Student Grade Level"> 
-                        <option value= "Grade 11">Grade 11</option>
-                        <option value= "Grade 12">Grade 12</option>
-                    </select> 
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="Student Section">Section:</label> 
-                    <input class="form-control" type="text" placeholder="Section" name = "Student Section">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="Student Contact Number">Contact Number:</label> 
-                    <input type="text" placeholder="Contact Number" name = "Student Contact Number"  pattern="[0-9]{11}">
-                </div>    
-                <!-- Guardian Information -->
-                <div class="mb-3">
-                    <label class="form-label" for="Guardian Name">Guardian Name:</label> 
-                    <input class="form-control" type="text" placeholder="Guardian Name" name = "Guardian Name">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="Guardian Contact Number">Guardian Contact Number:</label> 
-                    <input class="form-control" type="tel" placeholder="Guardian's Contact Number" name = "Guardian Contact Number" pattern="[0-9]{11}">
-                </div>         
-            </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="Submmit" class="btn btn-primary" form="studentInfo" name="submitStudent">Save changes</button>
-            </div>
-            </div>
-        </div>
-        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

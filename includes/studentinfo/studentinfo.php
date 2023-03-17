@@ -4,5 +4,4 @@
     require_once "../../class/StudentInfo.php";
 
     $studentinfo = new StudentInfo(DB::getInstance());
-    $studentinfo->store($_POST['submitStudent']);
     
